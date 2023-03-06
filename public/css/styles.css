@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/*** TAG SELECTOR ***/
+html {
+
+}
+body {
+  font-family: roboto, sans;
+  background-image: -webkit-linear-gradient(65deg, #393053 50%, #443C68 50%);
+  margin: 0;
+  height: 110vh;
+  position: relative; /* ! We used position relative here so we can position the footer relative to the height of the body*/
+}
+
+p, h1, h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/*** ID SELECTOR ***/
+
+/*** CLASS SELECTOR ***/
+
+/**/
+/* Header */
+header {
+  color: #ECF2FF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #635985;
+  padding: 0 60px;
+  letter-spacing: 4px;
+}
+
+.journal-title {
+  font-size: 1.2rem;
+}
+
+.right-section {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  font-size: 0.9rem;
+  height: inherit;
+}
+
+.anchors {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  box-sizing: border-box;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  transition: all 0.15s;
+}
+
+.anchor-header {
+  text-decoration: none;
+  color: #ECF2FF;
+}
+
+/* Main */
+main {
+  margin: 40px 0 0;
+  padding:0 60px;
+}
+
+section {
+  color: #ECF2FF;
+}
+
+.current {
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+footer {
+  height: 60px;
+  color: #03C988;
+  background-color: #635985;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.journal {
+  margin-bottom: 10px;
+  color: #ECF2FF;
+}
+
+.journal-anchor {
+  color: #2C74B3;
+  text-decoration: none;
+}
+
+.journal-anchor:hover {
+  cursor: pointer;
+  color: #205295;
+}
+
+/* Compose */
+form {
+  color: #F2CD5C;
+}
+
+#titleInput, #postInput {
+  width: 100%;
+  padding: 0 5px;
+  font-family: roboto, sans;
+}
+
+.input-container {
+  margin-bottom: 5px;
+}
+
+.publish-button {
+  font-weight: bold;
+  color: #ECF2FF;
+  background-color: #39B5E0;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  transition: all 0.15s;
+}
+
+.publish-button:hover {
+  cursor: pointer;
+  color: #39B5E0;
+  background-color:#ECF2FF;
+}
+
+/* Add class */
+.add-border-bottom {
+  border-bottom: 4px solid #2C74B3;
+}

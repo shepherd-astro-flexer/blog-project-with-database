@@ -1,0 +1,20 @@
+<%- include("partials/header") -%>
+    <section>
+      <div class="current">
+        <h1 class="title">Home</h1>
+        <p class="content"><%= content %></p>
+      </div>
+      <div class="journal-container">
+      <% items.forEach(item => { %>
+        <div class="journal">
+          <h2><%= item.title %></h2>
+          <% if (item.post.length > 100) { %>
+            <p><%= item.post.slice(0, 100) + " ... " %><a class="journal-anchor" href="posts/<%= item.title %>">Read More</a></p>
+          <% } else { %>
+            <p><%= item.post %></p>
+          <% } %>
+        </div>
+      <% }) %>
+      </div>
+    </section>
+<%- include("partials/footer") -%>
